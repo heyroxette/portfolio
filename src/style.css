@@ -1,11 +1,18 @@
+:root {
+  --heading-font: "Catamaran", sans-serif;
+  --sub-heading: 'Arvo', serif;
+}
+
 h1,
 h2 {
   text-align: center;
 }
 
 h1 {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-family: var(--heading-font);
+  font-size: 50px;
 }
 
 h2 {
@@ -13,16 +20,18 @@ h2 {
   margin-bottom: 0;
 }
 
-
-p {
-  margin-top: 10px;
-  text-align: center;
+h2, h3, h4 {
+ font-family: var(--sub-heading);
+ font-weight: 900;
 }
 
 .container-fluid {
   width: 95%;
 }
 
+.navbar-brand {
+  font-weight: 900;
+}
 
 .hero {
   background: #d5ffaa;
@@ -36,8 +45,16 @@ p {
   padding-bottom: 5px;
 }
 
+.about-me {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
 .about-me-paragraph {
+  margin-top: 10px;
   padding-bottom: 50px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .project {
@@ -56,13 +73,14 @@ text-align: center;
 
 .project-link {
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
-.project-link button {
+.project-link btn {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(124, 126, 122);
+  
 }
 
 .project-link btn:hover {
