@@ -1,40 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="src/style.css">
-  <title>Roxette Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Roxette Portfolio</title>
+    <script src="https://kit.fontawesome.com/a5c2f1ffb4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">RG</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">About me</a>
-        <a class="nav-link" href="#">Projects</a>
-        <a class="nav-link">Contact me</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">RG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About me</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <img src="images/portraitbanner.png" alt="" class="img-fluid portrait" />
+      <h2>a Front end developer based in Toronto Canada</h2>
+    </div>
+
+    <div class="container about-me">
+      <h1 id="about">About me</h1>
+      <div class="about-me-paragraph">
+        <p>
+          I have good knowledge of HTML and CSS, and a basic understanding of
+          JavaScript and React.
+          <br />
+          With the help of SheCodes workshop I was able to learn and build a
+          weather app in vanilla JS, a responsive potfolio,
+          <br />
+          a dictionary in react and another weather app in react. Below are the projects I have worked on so far 
+          <br />
+           and I'm currently
+          working on a To do list App on React.
+        </p>
       </div>
     </div>
-  </div>
-</nav>
 
-<div class="hero">
-  <img src="images/portraitbanner.png" alt="" class="img-fluid portrait">
-  <h2> a Front end developer based in Toronto Canada</h2>
-</div>
+    <div class="project">
+      <h1 id="projects">Projects</h1>
+      <div class="row">
+        <div class="col-4">
+          <h3 class="project-title">Weather App</h3>
+          <img
+            class="project-image"
+            src="images/weather-app-vanilla-js.png"
+            alt=""
+            width="300"
+          />
+          
+          <div class="project-link">
+              <a
+                href="https://weatherapp-vanillajs-2ac8a3.netlify.app/"
+                target="_blank"
+                class="btn btn-light"
+                >Test me out</a
+              >
+          </div>
+        </div>
 
-<div class="container about-me">
-<h1>About me</h1>
-<p>I am a recent graduate of a 4 course workshop from SheCodes online coding .</p>
-</div>
-</body>
+        <div class="col-4">
+          <h3 class="project-title">Dictionary App React</h3>
+          <img
+            class="project-image"
+            src="images/dictionary-react.png"
+            alt=""
+            width="348"
+          />
+          
+          <div class="project-link">
+              <a
+                href="https://roxette-dictionary-app-react.netlify.app/"
+                target="_blank"
+                class="btn btn-light"
+                >Search Something</a
+              >
+            
+          </div>
+        </div>
+
+        <div class="col-4">
+          <h3 class="project-title">Weather App React</h3>
+          <img
+            class="project-image"
+            src="images/weather-app-react.png"
+            alt=""
+            width="300"
+          />
+          
+          <div class="project-link">
+              <a
+                href="https://weather-app-react-roxette.netlify.app/"
+                target="_blank"
+                class="btn btn-light"
+                >link</a
+              >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact mt-5"> 
+      <div class="row">
+        <div class="col-6 contact-info">
+          <h1 id="contact">Let's get in touch!</h1>
+          <h4 class="mt-5"> 📩 Email</h4>
+          <a class="contact-link" href="mailto:roxettes.garcia@gmail.com" title="Roxette's Email">roxettes.garcia@gmail.com</a>
+          <h4 class="mt-5">
+            <i class="fab fa-brands fa-linkedin"></i> LinkedIn
+          </h4>
+          <a class="contact-link" href="https://www.linkedin.com/in/roxette-garcia-298188193/" target="_blank">Roxette Garcia</a>
+          <h4 class="mt-5">
+            <i class="fab fa-brands fa-github"></i>
+            Github
+          </h4>
+          <a class="contact-link" href="https://github.com/heyroxette" target="_blank">heyroxette</a>
+        </div>
+
+        <div class="col-6 mb-5">
+          <img src="images/selfportrait.png" alt="" class="self-portrait img-fluid">
+        </div>
+
+      </div>
+     
+    </div>
+  </body>
 </html>

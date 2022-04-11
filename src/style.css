@@ -1,3 +1,29 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}
+
+
+p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container-fluid {
+  width: 95%;
+}
+
+
 .hero {
   background: #d5ffaa;
 }
@@ -10,27 +36,90 @@
   padding-bottom: 5px;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
-h2 {
+.about-me-paragraph {
   padding-bottom: 50px;
-  margin-bottom: 0;
 }
 
-h1 {
-  margin-top: 50px;
+.project {
+background: #d5ffaa;
+text-align: center;
 }
 
-p {
+.project-title {
   margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.project-image {
+  border-radius: 10px;
+}
+
+.project-link {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.project-link button {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(124, 126, 122);
+}
+
+.project-link btn:hover {
+  cursor: crosshair;
+}
+
+.project-link a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(124, 126, 122);
+}
+
+.project-link a:hover{
+  background: darkgrey;
+  border: darkgrey;
+  color: white;
+}
+
+.contact {
   text-align: center;
 }
+.contact h4 {
+  margin-top: 20px; 
+  font-weight: bold;
+}
+
+.contact-info{
+ padding-bottom: 50px;
+}
+
+.contact-info a {
+  text-decoration: none;
+   color: green;
+}
+
+.contact-info a:hover {
+ color: blue;
+ text-decoration: underline;
+}
+
+.contact-link {
+  padding-bottom: 70px;
+}
+
+.self-portrait {
+    border-radius: 300px;
+    width: 300px;
+    margin-top: 100px;
+    padding: 0;
+}
+
 
 @media (max-width: 550px) {
   h2 {
     font-size: 20px;
   }
+
 }
